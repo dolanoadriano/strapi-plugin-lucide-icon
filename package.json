@@ -1,4 +1,5 @@
 {
+  "name": "@technitools/strapi-plugin-lucide-icon",
   "version": "3.0.7",
   "keywords": [],
   "type": "commonjs",
@@ -67,7 +68,6 @@
     "displayName": "Strapi Lucide Icon Field",
     "description": ""
   },
-  "name": "strapi-plugin-lucide-icon",
   "description": "",
   "license": "MIT",
   "author": "dolanoadriano"
