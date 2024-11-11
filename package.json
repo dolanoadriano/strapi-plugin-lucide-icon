@@ -1,5 +1,6 @@
 {
   "name": "@technitools/strapi-plugin-lucide-icon",
+  "private": false,
   "version": "3.0.7",
   "keywords": [],
   "type": "commonjs",
