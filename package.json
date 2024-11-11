@@ -23,7 +23,9 @@
     "dist"
   ],
   "scripts": {
+    "clean": "rm -rf dist",
     "build": "strapi-plugin build",
+    "prepublishOnly": "npm run clean && npm run build && npm run verify",
     "watch": "strapi-plugin watch",
     "watch:link": "strapi-plugin watch:link",
     "verify": "strapi-plugin verify",
