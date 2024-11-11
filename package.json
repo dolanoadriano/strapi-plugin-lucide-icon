@@ -1,0 +1,72 @@
+{
+  "version": "3.0.7",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0-rc.12",
+    "@strapi/icons": "^2.0.0-rc.12",
+    "lucide-react": "^0.454.0",
+    "react-intl": "^6.8.5",
+    "react-window": "^1.8.10"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.2.7",
+    "@strapi/strapi": "^5.2.0",
+    "@strapi/typescript-utils": "^5.2.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-window": "^1.8.8",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "styled-components": "^6.1.13",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.2.7",
+    "@strapi/strapi": "^5.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "styled-components": "^6.1.13"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "strapi-plugin-lucide-icon",
+    "displayName": "Strapi Lucide Icon Field",
+    "description": ""
+  },
+  "name": "strapi-plugin-lucide-icon",
+  "description": "",
+  "license": "MIT",
+  "author": "dolanoadriano"
+}
